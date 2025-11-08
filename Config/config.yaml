@@ -7,7 +7,7 @@ n_samples: 16
 len_lz: 92
 n_imps: 16
 threshold: 39
-save_path: "./save39"
+save_path: "./save"
 
 dataset:
   train:
@@ -16,14 +16,14 @@ dataset:
     scale: 1
     scaleT: 1
     downsample: 2
-    file: "../data/01_4d_10.nii.gz"
+    file: "./data/yourdata.nii.gz"
   eval:
     radius: 0.5
     bsize: 2048
     scale: 1
     scaleT: 2
     downsample: 2
-    file: "../data/01_4d_10.nii.gz"
+    file: "./data/yourdata.nii.gz"
 
 dataloader:
   train:
