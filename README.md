@@ -29,8 +29,8 @@ pip install -r ./requirement.txt
 ```
 
 ### Dataset
-You can refer to the following links to download the datasets of raw cell membrane fluorescence 
-[Raw_memb.zip](https://drive.google.com/file/d/1HIFOrZ51F_eN-dybjgZYX4RZrqsnjd7x/view?usp=sharing).
+You can refer to the following links to download the datasets of our collected dataset 
+[figshare](https://figshare.com/articles/dataset/Public_Raw_Data/29064530).
 
 ### Training  
 **Example**: to train yourdata with *SpatimeINR*, you need to keep these data in
