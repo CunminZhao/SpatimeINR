@@ -38,8 +38,8 @@ rcan:
   n_resblocks: 4
   n_feats: 32
   reduction: 16
-  in_channels: null    # 如果为 null 就采用 data_5 的最后一个维度
-  out_channels: null   # 输出通道数
+  in_channels: null    
+  out_channels: null  
 
 optim:
   name: "Adam"
