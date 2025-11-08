@@ -37,7 +37,7 @@ You can refer to the following links to download the datasets of raw cell membra
 * **Structure of data folder**: 
     ```buildoutcfg
     data/
-      |your_4D_data.niigz #data.shape=(x,y,z,t)
+      |your_4D_data.nii.gz #data.shape=(x,y,z,t)
     Config/
       |config.yaml
     ```
