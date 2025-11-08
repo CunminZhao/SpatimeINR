@@ -6,7 +6,7 @@
 ## Overview
 <img width="800" alt="Ai" src="https://github.com/user-attachments/assets/40308712-faad-4b06-b41d-3e6acecafa88">  
 
-** An overview of our proposed SpatimeINR method***
+*** An overview of our proposed SpatimeINR method***
 ## Get Started
 ### Dependencies and Installation
 - Python 3.11.0
@@ -57,30 +57,18 @@ you will get your result in
 
 
 ### Inference  
-**Example**: to run *EmbSAM* with Emb1_Raw, you need to keep these data in
-* **Structure of data folder**: 
-    ```buildoutcfg
-    data/
-      |--Emb1_Raw/*.tif
-    ```
-* **Structure of confs folder**:  
-  The Emb1_CellTracing.csv is the tracing result of cell nucleus fluorescence, saved in confs.
-    ```buildoutcfg
-    confs/
-      |--Emb1_CellTracing.csv
-      |--running_Emb1.txt
-      ...
-      |--other running confs
-    ```
-Then run
+Then run，where *scale* is the spatial resolution that you can set arbitrarily, and *scaleT* is the temporal resolution that you can set arbitrarily. Raw data is also necessary for the sampling shape.
 ```
-python .\EmbSAM.py --config_file ./confs/running_Emb1.txt --nii_path "./nii" --opdir "./output/"
+python inference.py --config ./Config/config.yaml --save_path "./save" --file "./data/yourdata.nii.gz" --scale 1 --scaleT 2
 ```
 
 you will get your result in 
-```
-./output_folder/result
-```
+ ```buildoutcfg
+    save/
+      |current.pth
+      |latent_code.pt
+      |output.nii.gz #data.shape=(x*scale,y*scale,z*scale,t*scaleT)
+ ```
 
 ## Provided Data
 * All the 5 embryo samples processed in this paper are digitized into the format customized to our visualization software *ITK-SNAP-CVE* from [https://doi.org/10.1101/2023.11.20.567849](https://doi.org/10.1101/2023.11.20.567849), and can be downloaded [online](https://doi.org/10.6084/m9.figshare.24768921.v2).  
