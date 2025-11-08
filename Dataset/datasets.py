@@ -3,7 +3,6 @@ import numpy as np
 import math
 import random
 import copy
-from PIL import Image
 import nibabel as nib
 import torch
 from torch.utils.data import Dataset, DataLoader
