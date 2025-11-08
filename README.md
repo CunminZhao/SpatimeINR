@@ -29,7 +29,7 @@ pip install -r ./requirement.txt
 ```
 
 ### Dataset
-You can refer to the following links to download the datasets of our collected dataset 
+You can refer to the following links to download the datasets of our collected dataset in 
 [figshare](https://figshare.com/articles/dataset/Public_Raw_Data/29064530).
 
 ### Training  
