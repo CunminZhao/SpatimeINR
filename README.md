@@ -32,20 +32,31 @@ pip install -r ./requirement.txt
 You can refer to the following links to download the datasets of raw cell membrane fluorescence 
 [Raw_memb.zip](https://drive.google.com/file/d/1HIFOrZ51F_eN-dybjgZYX4RZrqsnjd7x/view?usp=sharing).
 
-
-### Pre-trained Model
-the pre-trained models of this project can be downloaded here
-- The model_parameters with Segment Anything Model(vit_b) and the image denosing module trained on X_axis, Y_axis and Z_axis [[model_parameters](https://drive.google.com/file/d/1D9S9Prl60RLF2ftX7dcCc-LTE_tKIYWQ/view?usp=sharing)]. You need to download these parameters and put them into model_parameters.
-* **Structure of model_parameters**: 
+### Training  
+**Example**: to train *SpatimeINR*, you need to keep these data in
+* **Structure of data folder**: 
     ```buildoutcfg
-    model_parameters/
-      |--Z_axis.pth
-      |--Y_axis.pth
-      |--X_axis.pth
-      |--sam_vit_b_01ec64.pth
+    data/
+      |your_4D_data.niigz #data.shape=(x,y,z,t)
+    Config/
+      |config.yaml
     ```
 
-### Test  
+Then run
+```
+python train.py --config ./Config/config.yaml --save_path "./save" --file "../data/yourdata.nii.gz"
+```
+
+you will get your result in 
+* **Structure of save folder**: 
+    ```buildoutcfg
+    data/
+      |current.pth
+      |latent_code.pt
+    ```
+
+
+### Inference  
 **Example**: to run *EmbSAM* with Emb1_Raw, you need to keep these data in
 * **Structure of data folder**: 
     ```buildoutcfg
