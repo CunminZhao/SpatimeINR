@@ -94,8 +94,5 @@ def inference(config):
 
 
 if __name__ == "__main__":
-    # 加载配置并根据命令行参数进行更新
     config = parse_arguments_and_update_config()
-    
-    # 将更新后的配置传入 inference 进行推断
     inference(config)
