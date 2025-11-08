@@ -14,17 +14,17 @@
 
 1. Create Conda Environment
 ```
-conda create --name EmbSAM python=3.11.0
-conda activate EmbSAM
+conda create --name SpatimeINR python=3.11.0
+conda activate SpatimeINR
 conda install anaconda::git
 ```
 2. Clone Repo
 ```
-git clone https://github.com/cunminzhao/EmbSAM.git
+git clone https://github.com/cunminzhao/SpatimeINR.git
 ```
 3. Install Dependencies
 ```
-cd EmbSAM
+cd SpatimeINR
 pip install -r ./requirement.txt
 ```
 
