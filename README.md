@@ -4,7 +4,7 @@
 
 
 ## Overview
-<img width="900" alt="Ai" src=“https://github.com/user-attachments/assets/40308712-faad-4b06-b41d-3e6acecafa88”>   
+<img width="900" alt="Ai" src="https://github.com/user-attachments/assets/40308712-faad-4b06-b41d-3e6acecafa88">  
 
 ** An overview of our proposed SpatimeINR method***
 ## Get Started
