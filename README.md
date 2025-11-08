@@ -1,14 +1,12 @@
-# [*arXiv*] *EmbSAM*: Cell boundary localization and Segment Anything Model for 3D fast-growing embryos
+# [*arXiv*] Implicit Reconstruct Spatiotemporal Super-Resolution Microscopy in Arbitrary Dimension
 
-**Motivations**: Cellular shape dynamics are critical for understanding cell fate determination and organogenesis during development. However, fluorescence live-cell images of cell membranes frequently suffer from a low signal-to-noise ratio, especially during long-duration imaging with high spatiotemporal resolutions. This is caused by phototoxicity and photobleaching, which limit laser power and hinder effective time-lapse cell shape reconstruction, particularly in rapidly developing embryos.  
-
-**Results**: We devised a new computational framework, EmbSAM, that incorporates a deep-learning-based cell boundary localization algorithm and the Segment Anything Model. EmbSAM enables accurate and robust three-dimensional (3D) cell membrane segmentation for roundworm Caenorhabditis elegans embryos imaged every 10 seconds. The cell shape data prior to gastrulation quantitatively characterizes a series of cell-division-coupled morphodynamics associated with cell position, cell identity, lineage, and fate, and can be accessed locally and online. The framework also exhibits potential in segmenting and quantifying the fluorescence labeling various cell-membraned-attached molecules in both wild-type and RNAi-treated embryos.
+**Motivations**:High-resolution 4D fluorescence microscopy imaging, essential for deciphering dynamic biological processes, is typically challenged by insufficient spatiotemporal resolutions. Phototoxicity, photobleaching, and the anisotropic resolution inherent in current live cell image acquisition systems. To address these challenges, we propose an implicit neural representation-based arbitrary scale super-resolution framework, termed SpatimeINR, which leverages spatiotemporal latent representation in conjunction with a multilayer perceptron for 4D rendering, while incorporating cycle-consistency loss to ensure fidelity with the original data. Extensive experiments on lung cancer cell and C.elegans cell membrane fluorescence datasets demonstrate that our approach significantly outperforms state-of-the-art methods in both temporal and spatial (4D) super-resolution tasks. Ablation studies further confirmed the critical contributions of the spatiotemporal latent representation, 4D rendering, and cycle-consistency loss. Code and data will be released after the review process.
 
 
 ## Overview
-<img width="900" alt="Ai" src="https://github.com/user-attachments/assets/eb76f337-db21-4e6c-9b14-f51ac73e8439">     
+<img width="900" alt="Ai" src=“https://github.com/user-attachments/assets/40308712-faad-4b06-b41d-3e6acecafa88”>   
 
-**Fig. 1. The flowchart of *EmbSAM***
+** An overview of our proposed SpatimeINR method***
 ## Get Started
 ### Dependencies and Installation
 - Python 3.11.0
