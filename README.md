@@ -33,11 +33,11 @@ You can refer to the following links to download the datasets of raw cell membra
 [Raw_memb.zip](https://drive.google.com/file/d/1HIFOrZ51F_eN-dybjgZYX4RZrqsnjd7x/view?usp=sharing).
 
 ### Training  
-**Example**: to train *SpatimeINR*, you need to keep these data in
+**Example**: to train yourdata with *SpatimeINR*, you need to keep these data in
 * **Structure of data folder**: 
     ```buildoutcfg
     data/
-      |your_4D_data.nii.gz #data.shape=(x,y,z,t)
+      |yourdata.nii.gz #data.shape=(x,y,z,t)
     Config/
       |config.yaml
     ```
@@ -50,7 +50,7 @@ python train.py --config ./Config/config.yaml --save_path "./save" --file "../da
 you will get your result in 
 * **Structure of save folder**: 
     ```buildoutcfg
-    data/
+    save/
       |current.pth
       |latent_code.pt
     ```
