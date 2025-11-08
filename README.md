@@ -70,12 +70,9 @@ you will get your result in
       |output.nii.gz #data.shape=(x*scale,y*scale,z*scale,t*scaleT)
  ``` 
 
-## Running Time
-Following the instructional video on SharePoint[[here](https://innocimda-my.sharepoint.com/:f:/p/zelin/EiawdEXlPAxJk98XbtPqfgUBt_SMlnbgE9VmnLChHSiXJQ?e=TNAfFu)] and YouTube[[here](https://www.youtube.com/watch?v=sir2-IMKDwU)] (provided in Google Colab[[here](https://drive.google.com/file/d/1CA3g2WEhPmwvSzE_QL8wBkd3nD_XWMCE/view?usp=drive_link)], which is accessible through figshare[[here](https://doi.org/10.6084/m9.figshare.29064530)]), two individuals uninvolved in EmbSAM development were able to execute the complete procedure (incl., downloading the compressed raw image, installing the required Python packages via pip, running the full workflow, and completing segmentation of a small, representative test dataset) in <1 hour. Once the preparation was aaccomplished, the computational time for processing actual image stacks — dependent on time points, processing unit, and so forth — was evaluated (see Supplemental Data 3 of the paper) as <6 minutes per time point.
+## Compute Report
+This method was tested on both the NVIDIA RTX 4090 and A100, and will be released soon.
 
 ## Acknowledgement
-- We appreciate several previous works for their algorithms and datasets related/helpful to this project, including [*CShaper*](https://doi.org/10.1038/s41467-020-19863-x), [*CMap*](https://doi.org/10.1101/2023.11.20.567849), [*LLFlow*](
-https://doi.org/10.48550/arXiv.2109.05923), [*3DMMS*](https://doi.org/10.1186/s12859-019-2720-x), [*MedLSAM*](
-https://doi.org/10.48550/arXiv.2306.14752), and [*Segment Anything*](
-https://doi.org/10.48550/arXiv.2304.02643).
+- We appreciate several previous works for their algorithms and datasets related/helpful to this project, including [*LIIF*](https://github.com/yinboc/liif), [*RCAN*](https://github.com/AiviaCommunity/3D-RCAN), [*CuNeRF*](https://github.com/NarcissusEx/CuNeRF), and [*SVIN*](https://github.com/yyguo0536/SVIN).
 
