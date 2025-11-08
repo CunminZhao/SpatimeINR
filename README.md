@@ -57,7 +57,7 @@ you will get your result in
 
 
 ### Inference  
-Then run，where *scale* is the spatial resolution that you can set arbitrarily, and *scaleT* is the temporal resolution that you can set arbitrarily. Raw data is also necessary for the sampling shape.
+Then run，where ```scale``` is the spatial resolution that you can set arbitrarily, and ```scaleT``` is the temporal resolution that you can set arbitrarily. ```yourdata``` is also necessary for the sampling shape.
 ```
 python inference.py --config ./Config/config.yaml --save_path "./save" --file "./data/yourdata.nii.gz" --scale 1 --scaleT 2
 ```
@@ -68,14 +68,7 @@ you will get your result in
       |current.pth
       |latent_code.pt
       |output.nii.gz #data.shape=(x*scale,y*scale,z*scale,t*scaleT)
- ```
-
-## Provided Data
-* All the 5 embryo samples processed in this paper are digitized into the format customized to our visualization software *ITK-SNAP-CVE* from [https://doi.org/10.1101/2023.11.20.567849](https://doi.org/10.1101/2023.11.20.567849), and can be downloaded [online](https://doi.org/10.6084/m9.figshare.24768921.v2).  
-
-* The effective visualization is shown below:
-
-    *  <img width="900" alt="GUIDATA_SHOW" src="https://github.com/cuminzhao/EmbSAM/assets/80189429/ef30e2dd-e29d-4e0d-bf2f-cdb01b254ed0">  
+ ``` 
 
 ## Running Time
 Following the instructional video on SharePoint[[here](https://innocimda-my.sharepoint.com/:f:/p/zelin/EiawdEXlPAxJk98XbtPqfgUBt_SMlnbgE9VmnLChHSiXJQ?e=TNAfFu)] and YouTube[[here](https://www.youtube.com/watch?v=sir2-IMKDwU)] (provided in Google Colab[[here](https://drive.google.com/file/d/1CA3g2WEhPmwvSzE_QL8wBkd3nD_XWMCE/view?usp=drive_link)], which is accessible through figshare[[here](https://doi.org/10.6084/m9.figshare.29064530)]), two individuals uninvolved in EmbSAM development were able to execute the complete procedure (incl., downloading the compressed raw image, installing the required Python packages via pip, running the full workflow, and completing segmentation of a small, representative test dataset) in <1 hour. Once the preparation was aaccomplished, the computational time for processing actual image stacks — dependent on time points, processing unit, and so forth — was evaluated (see Supplemental Data 3 of the paper) as <6 minutes per time point.
