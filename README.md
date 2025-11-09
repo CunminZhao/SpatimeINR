@@ -44,7 +44,7 @@ You can refer to the following links to download the datasets of our collected d
 
 Then run
 ```
-python train.py --config ./Config/config.yaml --save_path "./save" --file "../data/yourdata.nii.gz"
+python train.py --config ./Config/config.yaml --save_path "./save" --file "./data/yourdata.nii.gz"
 ```
 
 you will get your result in 
