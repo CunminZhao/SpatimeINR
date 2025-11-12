@@ -74,5 +74,5 @@ you will get your result in
 This method was tested on both the NVIDIA RTX 4090 and A100, and will be released soon.
 
 ## Acknowledgement
-- We appreciate several previous works for their algorithms and datasets related/helpful to this project, including [*LIIF*](https://github.com/yinboc/liif), [*RCAN*](https://github.com/AiviaCommunity/3D-RCAN), [*CuNeRF*](https://github.com/NarcissusEx/CuNeRF), and [*SVIN*](https://github.com/yyguo0536/SVIN).
+- We appreciate several previous works for their algorithms related/helpful to this project, including [*LIIF*](https://github.com/yinboc/liif), [*RCAN*](https://github.com/AiviaCommunity/3D-RCAN), [*CuNeRF*](https://github.com/NarcissusEx/CuNeRF), and [*SVIN*](https://github.com/yyguo0536/SVIN).
 
