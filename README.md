@@ -1,4 +1,4 @@
-
+##Implicit Reconstruct Spatiotemporal Super-Resolution Microscopy in Arbitrary Dimension  
 **Motivations**: High-resolution 4D fluorescence microscopy imaging, essential for deciphering dynamic biological processes, is typically challenged by insufficient spatiotemporal resolutions. Phototoxicity, photobleaching, and the anisotropic resolution inherent in current live cell image acquisition systems. To address these challenges, we propose an implicit neural representation-based arbitrary scale super-resolution framework, termed SpatimeINR, which leverages spatiotemporal latent representation in conjunction with a multilayer perceptron for 4D rendering, while incorporating cycle-consistency loss to ensure fidelity with the original data. Extensive experiments on lung cancer cell and C.elegans cell membrane fluorescence datasets demonstrate that our approach significantly outperforms state-of-the-art methods in both temporal and spatial (4D) super-resolution tasks. Ablation studies further confirmed the critical contributions of the spatiotemporal latent representation, 4D rendering, and cycle-consistency loss.
 
 
