@@ -2,6 +2,7 @@
 
 **Motivations**: High-resolution 4D fluorescence microscopy imaging, essential for deciphering dynamic biological processes, is typically challenged by insufficient spatiotemporal resolutions, including restricted t-axis sampling density to prevent photobleaching and issues with anisotropic resolution.  To address these challenges, we propose an implicit neural representation based arbitrary-scale super-resolution framework, termed **SpatimeINR**, which leverages spatiotemporal latent representation in conjunction with a multilayer perceptron for 4D rendering, while incorporating cycle-consistency loss to ensure fidelity with the original data. Extensive experiments on lung cancer cell and C.elegans cell membrane fluorescence datasets demonstrate that our approach can accurately reconstruct the nonlinear dynamic motion of biological samples along the time axis and significantly outperforms state-of-the-art methods in both temporal and spatial (4D) super-resolution tasks.
 
+**The training and inference code will be released soon.**
 
 ## Overview
 <img width="800" alt="Ai" src="https://github.com/user-attachments/assets/40308712-faad-4b06-b41d-3e6acecafa88">  
